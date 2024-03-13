@@ -71,6 +71,7 @@ const ProductsPage = () => {
         {filteredData.map((ele) => (
           <Product
             key={ele.id}
+            id={ele.id}
             name={ele.title}
             price={ele.price}
             img={ele.image}
