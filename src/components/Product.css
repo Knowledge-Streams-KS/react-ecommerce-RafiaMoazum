@@ -1,0 +1,22 @@
+.main {
+    display: grid;
+
+}
+
+.card {
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+    /* width: 20%; */
+    
+}
+
+.name {
+    font-weight: bold;
+    color: rgb(16, 16, 116);
+}
+
+.picture {
+    width: 250px;
+    height: 200px;
+}
