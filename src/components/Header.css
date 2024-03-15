@@ -1,0 +1,14 @@
+.NavBar {
+    display: flex;
+    justify-content:flex-start;
+    list-style-type: none; 
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.NavBar li {
+    margin: 10px; 
+    
+}

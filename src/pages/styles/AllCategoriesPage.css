@@ -1,0 +1,15 @@
+.all-categories-main-div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.all-categories-inner-div{
+    display:flex;
+    justify-content: center;
+    border:2px solid black;
+    padding: 10px;
+    margin:10px;
+    font-size: 30px;
+    width: 400px;
+}

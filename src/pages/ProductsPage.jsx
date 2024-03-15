@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "../components/Product";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
@@ -53,6 +54,7 @@ const ProductsPage = () => {
   return (
     <>
       <div>
+        {/* <NavLink to="/allCategoriesPage">Categories</NavLink> */}
         <h1>ALL PRODUCTS</h1>
 
         <input
@@ -71,6 +73,7 @@ const ProductsPage = () => {
         {filteredData.map((ele) => (
           <Product
             key={ele.id}
+            id={ele.id}
             name={ele.title}
             price={ele.price}
             img={ele.image}
