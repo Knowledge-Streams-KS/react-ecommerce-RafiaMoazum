@@ -24,7 +24,7 @@ const ProductDetailsPage = () => {
 
   return (
     <>
-     {product && (
+     {product ? (
         <div>
           <img className="picture" src={product.image} alt="image"/>
           <h1>{product.title}</h1> 
@@ -32,6 +32,11 @@ const ProductDetailsPage = () => {
           <p>Description:{product.description}</p>
           <p>Price:{product.price}</p>  
         </div>
+      ):(
+        <>
+        <h1>Product Details</h1>
+        <p>No Product Found</p>
+        </>
       )}
       
    
