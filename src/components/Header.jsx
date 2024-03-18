@@ -8,8 +8,10 @@ const Header =() =>{
         <nav className="NavBar">
           
                 <li><NavLink to="/" style={{ textDecoration: 'none', color:"black" }}>Home</NavLink></li>
-                <li><NavLink to="/" style={{ textDecoration: 'none', color:"black" }}>All Products</NavLink></li>
+                <li><NavLink to="/productsPage" style={{ textDecoration: 'none', color:"black" }}>All Products</NavLink></li>
                 <li><NavLink to="/allCategoriesPage" style={{ textDecoration: 'none' , color:"black"}}>All Categories</NavLink></li>
+                <li><NavLink to="/cart" style={{ textDecoration: 'none' , color:"black"}}>Cart</NavLink></li>
+
             
         </nav>
         
