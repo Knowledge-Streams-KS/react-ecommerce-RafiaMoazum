@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Product = (props) => {
   return (
     <>
-      <div className="main">
+      
         <div className="card">
           <img className="picture" src={props.img} alt="image" />
           <p>{props.category}</p>
@@ -14,7 +14,7 @@ const Product = (props) => {
 
           <p>Price:{props.price}</p>
         </div>
-      </div>
+      
     </>
   );
 };

@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import Product from "../components/Product";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import UserAuthContext from "../context/UserAuthContext";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
+  const {myval} =useContext(UserAuthContext)
   
-
+useEffect(() =>{
+ console.log("Context in Products", myval)
+},[])
   const fetchProducts = async () => {
     try {
       const response = await axios.get("https://fakestoreapi.com/products");
@@ -70,6 +74,7 @@ const ProductsPage = () => {
 
 
 
+        <div className="main">
         {filteredData.map((ele) => (
           <Product
             key={ele.id}
@@ -81,6 +86,7 @@ const ProductsPage = () => {
             category={ele.category}
           />
         ))}
+        </div>
       </div>
     </>
   );
