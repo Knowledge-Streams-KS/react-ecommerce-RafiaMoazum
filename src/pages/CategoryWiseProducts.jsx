@@ -25,9 +25,10 @@ const CategoryWiseProducts = () => {
   return (
     <>
       <h1>{category}</h1>
-      <div>
+      <div className="main">
+        
         {products.map((product, index) => (
-          <div key={index}>
+          <div key={index} className="card">
             <img src={product.image} alt={product.title} className="picture" />
             <br/>
             <NavLink to={`/product-details/${product.id}`} className="name">
